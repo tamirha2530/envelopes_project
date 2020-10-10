@@ -32,7 +32,6 @@ class BaseStrategy:
                 return
 
 
-
     def perform_strategy(self, counter):
         yes_no = input("there are " + str(self.envelopes[counter].get_money()) + " dollars in this envelope. Do you want to take it? answer: y/n")
         self.envelopes[counter].set_used = True
@@ -45,11 +44,6 @@ class BaseStrategy:
             return True
 
         return False
-
-
-
-
-
 
     @staticmethod
     def display():
